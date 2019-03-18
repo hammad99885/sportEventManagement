@@ -1,0 +1,4 @@
+nav, .dropdown-menu {
+    background-image: linear-gradient(to right top, #192625, #172627, #162529, #17242b, #19232c, #1b252e, #1d2831, #1f2a33, #213037, #25363b, #293b3d, #2f4140);
+    border-bottom: 1px solid white;
+}

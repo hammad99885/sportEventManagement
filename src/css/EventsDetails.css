@@ -1,0 +1,25 @@
+.EVD{
+    background-image: linear-gradient(to right top, #192625, #172627, #162529, #17242b, #19232c, #1b252e, #1d2831, #1f2a33, #213037, #25363b, #293b3d, #2f4140);
+}
+
+.EVD .cardCust{
+    width: 100%;
+    background: transparent;
+    box-shadow: .1rem .2rem .8rem rgba(12, 49, 56, 0.979);
+    border-radius: .5rem;
+    min-height: 10rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(to right top, #192625, #233f41, #1c373f, #17242b, #19232c, #1b252e, #1d2831, #283846, #213037, #25363b, #293b3d, #2f4140);
+    transition: .35s;
+}
+
+.EVD .cardCust:hover{
+    transform:  translate(0px, -3px);
+    box-shadow: .3rem .3rem 1.2rem rgba(40, 60, 65, 0.979);
+    /* background: yellow; */
+}
+
+.EVD .cardCust p{
+    margin-bottom: .3rem;
+}

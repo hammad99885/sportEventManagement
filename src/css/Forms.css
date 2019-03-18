@@ -1,0 +1,16 @@
+.signInForm{
+    max-width: 65%;
+    /* width: ; */
+    /* border: 2px solid; */
+    background: transparent;
+    box-shadow: .1rem .2rem .8rem rgba(12, 49, 56, 0.979);
+    border-radius: .5rem;
+    padding: 2rem 3rem;
+}
+
+@media only screen and (max-width:562px){
+    .signInForm{
+        max-width: 100%;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,107 @@
+.backgroundLinear1{
+    background-image: linear-gradient(to right top, #192625, #172627, #162529, #17242b, #19232c, #1b252e, #1d2831, #1f2a33, #213037, #25363b, #293b3d, #2f4140);
+}
+
+.boderBottom{
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    position: relative;
+    outline: none;
+    /* color: yellow !; */
+}
+
+
+
+/* boderBottom::after{
+    content: "av" !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    height: 4px !important;
+    background: #f1f3f1 !important;
+    width: 100px !important;
+    display: block !important;
+    z-index: 222 !important;
+} */
+
+.input.boderBottom:focus::after{
+    /* background: none !important; */
+    width: 100px;
+}
+
+
+ /* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 360px;
+    margin: 40px auto 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+  } */
+   .btn-primary {
+    background-color: #8e44ad;
+    border-color: #8e44ad;
+  }
+   .form-group {
+    position: relative;
+    padding-top: 16px;
+    margin-bottom: 16px;
+  }
+   .form-group .animated-label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    font-weight: 300;
+    opacity: 0.5;
+    cursor: text;
+    transition: 0.2s ease all;
+    margin: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+   .form-group .animated-label:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    height: 2px;
+    width: 10px;
+    visibility: hidden;
+    background-color: white;
+    transition: 0.2s ease all;
+  }
+   .form-group.not-empty .animated-label {
+    top: 0;
+    font-size: 12px;
+  }
+   .form-group .form-control {
+    position: relative;
+    z-index: 1;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    border-bottom-color: rgba(197, 197, 197, 0.747);
+    height: auto;
+    padding: 3px 0 5px;
+  }
+   .form-group .form-control:focus {
+    box-shadow: none;
+    border-bottom-color: rgba(0, 0, 0, 0.12);
+  }
+   .form-group .form-control:focus ~ .animated-label {
+    top: 0;
+    opacity: 1;
+    color: white;
+    font-size: 12px;
+  }
+   .form-group .form-control:focus ~ .animated-label:after {
+    visibility: visible;
+    width: 100%;
+    left: 0;
+  }
+  

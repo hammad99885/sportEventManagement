@@ -1,0 +1,110 @@
+.CED {
+  background-image: linear-gradient(
+    to right top,
+    #192625,
+    #172627,
+    #162529,
+    #17242b,
+    #19232c,
+    #1b252e,
+    #1d2831,
+    #1f2a33,
+    #213037,
+    #25363b,
+    #293b3d,
+    #2f4140
+  );
+  min-height: 108px;
+}
+
+.CED .fullWidthRow {
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(
+    to right top,
+    #192625,
+    #172627,
+    #162529,
+    #17242b,
+    #19232c,
+    #1b252e,
+    #1d2831,
+    #1f2a33,
+    #213037,
+    #25363b,
+    #293b3d,
+    #2f4140
+  );
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .CED .fullWidthRow {
+    /* max-width: 50rem; */
+    padding: 0 1rem;
+  }
+}
+
+.CED .fullWidthRow::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.CED .fullWidthRow [class^="col-"] {
+  float: left;
+  padding: 1rem;
+  /* vertical-align: text-bottom; */
+  /* min-height: 10rem; */
+  /* background: yellow; */
+}
+
+.CED .fullWidthRow [class^="col-"]:not(:last-child) {
+  /* margin-right: 2rem; */
+  border-right: 1px solid white;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .CED .fullWidthRow [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    /* margin-bottom: 2rem; */
+    border-right: none;
+    border-bottom: 1px solid white;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .CED .fullWidthRow [class^="col-"] {
+    width: 100% !important;
+  }
+}
+
+.CED .fullWidthRow .col-1o3 {
+  width: calc((100%) / 3);
+  overflow: hidden;
+}
+
+.record {
+  float: left;
+  margin-right: 1rem;
+}
+
+.CED .recordContainer {
+  width: max-content;
+  /* background: yellow; */
+  margin: auto;
+}
+.CED .recordContainer::after {
+  content: "";
+  display: table;
+  clear: both;
+
+  /* display: inline-block; */
+}
+.CED .record .whiteRecContainer {
+  display: inline-block;
+  padding: 0.3rem .7rem;
+  border-radius: 4px;
+  margin-top: 0.4rem;
+}

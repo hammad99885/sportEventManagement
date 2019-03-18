@@ -1,0 +1,39 @@
+
+#myCarousel .carousel-item {
+    height: 450px;
+}
+
+#myCarousel2 .carousel-item {
+    min-height: 350px;
+}
+
+@media only screen and (max-width:56.2rem) {
+    #myCarousel2 .carousel-item {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #myCarousel2 .carousel-item {
+        min-height: 480px;
+    }
+}
+
+.carousel-image-1 {
+    background-image: linear-gradient(to right top, #192625c7, #1726278f, #1625297c, #17242bdc, #19232c88, #1b252eee, #1d283173, #1f2a33dc, #21303785, #25363b94, #293b3d81, #2f4140fb), url('../assets/images/image-1.jpeg');
+    background-size: cover;
+}
+
+.carousel-image-2 {
+    background-image: linear-gradient(to right top, #192625c7, #1726278f, #1625297c, #17242bdc, #19232c88, #1b252eee, #1d283173, #1f2a33dc, #21303785, #25363b94, #293b3d81, #2f4140fb), url('../assets/images/image-2.jpg');
+    background-size: cover;
+}
+
+.carousel-image-3 {
+    background-image: linear-gradient(to right top, #192625c7, #1726278f, #1625297c, #17242bdc, #19232c88, #1b252eee, #1d283173, #1f2a33dc, #21303785, #25363b94, #293b3d81, #2f4140fb), url('../assets/images/image-3.jpg');
+    background-size: cover;
+}
+
+/* .carousel-item{
+    background-image: linear-gradient(to right top, #192625c7, #1726278f, #1625297c, #17242bdc, #19232c88, #1b252eee, #1d283173, #1f2a33dc, #21303785, #25363b94, #293b3d81, #2f4140fb), url('../../assets/images/image1.jpg');
+} */
