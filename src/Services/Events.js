@@ -40,7 +40,8 @@ export const CurrentEvents = [
 export const EventDetils = {
     previousEvents:[
         {
-            eventName: "EventName",
+            id: "p01",
+            eventName: "EventName1",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -51,11 +52,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "p02",
+            eventName: "EventName2",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -66,11 +187,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "p03",
+            eventName: "EventName3",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -81,11 +322,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "p04",
+            eventName: "EventName4",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -96,13 +457,133 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
     ],
     onGoingEvents:[
         {
-            eventName: "EventName",
+            id: "o01",
+            eventName: "EventName1",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -113,11 +594,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "o02",
+            eventName: "EventName2",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -128,11 +729,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "o03",
+            eventName: "EventName3",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -143,11 +864,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "o04",
+            eventName: "EventName4",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -158,13 +999,133 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
-        },
+        }
     ],
     upComingEvents:[
         {
-            eventName: "EventName",
+            id: "u01",
+            eventName: "EventName1",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -175,11 +1136,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "u02",
+            eventName: "EventName2",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -190,11 +1271,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "u03",
+            eventName: "EventName3",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -205,11 +1406,131 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
         {
-            eventName: "EventName",
+            id: "u04",
+            eventName: "EventName4",
             evenShorDesc:"Lorem ipsum, dolor sit amet",
             teams:{
                 teamOne: "Team 1",
@@ -220,7 +1541,126 @@ export const EventDetils = {
                 time: "12:30 pm"
             },
             eventDetails:{
-                dummyContent:"dummy"
+                detailedDesc:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius repellendus, assumenda, ullam aspernatur blanditiis quas autem neque hic debitis libero animi corporis vitae veritatis iste voluptate cupiditate nesciunt saepe tempore.",
+                teamsDetails:{
+                    team1:{
+                        teamName: "team 1",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    },
+                    team2:{
+                        teamName: "team 2",
+                        teamMembers: [
+                            {
+                                memberName: "Member 1",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 2",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 3",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 4",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 5",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 6",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 7",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 8",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 9",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 10",
+                                mainRole: "Batsman"
+                            },
+                            {
+                                memberName: "Member 11",
+                                mainRole: "Batsman"
+                            }
+                        ],
+                        teamCoach: "Coach",
+                        teamDesc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+                        goodAT: "Something",
+                        sponsers: [
+                            "someSponser1",
+                            "someSponser2",
+                            "someSponser3",
+                            "someSponser4",
+                        ]
+                    }
+                },
+                
             }
         },
     ]

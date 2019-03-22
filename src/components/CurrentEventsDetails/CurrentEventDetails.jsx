@@ -10,24 +10,42 @@ class CurentEventDetails extends Component {
 
   counter = 0;
   componentDidMount(){
-    setInterval(
-      ()=>{
-      $("#CED").fadeOut(100)
-      setTimeout(()=>{
-          const events = CurrentEvents[this.counter];
-        this.setState({events});
-        console.log(this.state.events)
-        console.log(this.counter)
-        this.counter = this.counter + 1;
-        if(this.counter == CurrentEvents.length ){
-          this.counter = 0;
-        }
-        $("#CED").fadeIn();
-      },110)
-      
-    },
-    8000)
+
+    let eventChangeTimer = (bool)=>{
+      if(bool === true){
+        var eveInt = setInterval(
+          ()=>{
+          $("#CED").fadeOut(100)
+          setTimeout(()=>{
+              const events = CurrentEvents[this.counter];
+            this.setState({events});
+            console.log(this.state.events)
+            console.log(this.counter)
+            this.counter = this.counter + 1;
+            if(this.counter == CurrentEvents.length ){
+              this.counter = 0;
+            }
+            $("#CED").fadeIn();
+          },110)
+          
+        },
+        8000)
+      }else if(bool === false){
+        clearInterval(eveInt);
+      }
+    }
+    eventChangeTimer(true)
+
+    document.addEventListener("visibilitychange", function() {
+      console.log(document.hidden, document.visibilityState);
+      if(document.hidden=== true){
+        eventChangeTimer(false);
+      }else if(document.hidden === false){
+        eventChangeTimer(true);
+      }
+    }, false);
   }
+
 
   render() {
     const { events } = this.state;

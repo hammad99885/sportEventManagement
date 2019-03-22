@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { EventDetils } from "../../Services/Events"
+import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const EventsDetails = () => {
     return (
@@ -13,10 +15,13 @@ const EventsDetails = () => {
                         {EventDetils.previousEvents.map((item, i) => {
                             return (
                                 <div key={i} className="cardCust" data-aos="fade-up" >
-                                    <h5>{item.eventName}</h5>
+                                <Link to={"/eventDetail/" + item.id} className="text-light">
+                                <h5>{item.eventName}</h5>
                                     <p>Descs: <small className=""> {item.evenShorDesc}</small></p>
                                     <p><small>{item.teams.teamOne} </small> VS <small> {item.teams.teamTwo}</small></p>
                                     <p>Date: <small className="mr-2">{item.timing.date}</small> Time: <small>{item.timing.time}</small></p>
+                                </Link>
+                                    
                                 </div>
                             )
                         })}
@@ -29,10 +34,13 @@ const EventsDetails = () => {
                         {EventDetils.onGoingEvents.map((item, i) => {
                             return (
                                 <div key={i} className="cardCust" data-aos="fade-up" >
-                                    <h5>{item.eventName}</h5>
+                                <Link to={"/eventDetail/" + item.id}  className="text-light">
+                                <h5>{item.eventName}</h5>
                                     <p>Descs: <small className=""> {item.evenShorDesc}</small></p>
                                     <p><small>{item.teams.teamOne} </small> VS <small> {item.teams.teamTwo}</small></p>
                                     <p>Date: <small className="mr-2">{item.timing.date}</small> Time: <small>{item.timing.time}</small></p>
+                                </Link>
+                                    
                                 </div>
                             )
                         })}
@@ -43,10 +51,14 @@ const EventsDetails = () => {
                         {EventDetils.upComingEvents.map((item, i) => {
                             return (
                                 <div key={i} className="cardCust" data-aos="fade-up" >
+                                    <Link to={"/eventDetail/" + item.id}  className="text-light">
                                     <h5>{item.eventName}</h5>
                                     <p>Descs: <small className=""> {item.evenShorDesc}</small></p>
                                     <p><small>{item.teams.teamOne} </small> VS <small> {item.teams.teamTwo}</small></p>
                                     <p>Date: <small className="mr-2">{item.timing.date}</small> Time: <small>{item.timing.time}</small></p>
+                                    </Link>
+                                    
+                                    {/* <Link to="/test" className="btn btn-sm btn-outline-light">See Details</Link> */}
                                 </div>
                             )
                         })}
