@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 import NavBar from "./components/Nav/navBar";
 import "./App.css";
 import Home from "./Containers/home";
@@ -29,16 +29,29 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
+        {/* <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/signin" component={SignIn} />
+          <Route
+            path="/register"
+            component={() => <Register register={this.register} />}
+          />
+          <Route path="/eventDetail/:id" component={DetailPage} />
+          <main className="container" />
+          <Route path="/not-found" component={NotFound} />
+          <Redirect to="/not-found" />
+        </Switch> */}
         <Route path="/" exact component={Home} />
-        <Route path="/signin" component={SignIn} />
-        <Route
-          path="/register"
-          component={() => <Register register={this.register} />}
-        />
-        <Route path="/eventDetail/:id" component={DetailPage} />
-        <main className="container">
-        </main>
-        <Route path="not Found" component={NotFound}></Route>
+          <Route path="/signin" component={SignIn} />
+          <Route
+            path="/register"
+            component={() => <Register register={this.register} />}
+          />
+          <Route path="/eventDetail/:id" component={DetailPage} />
+          <main className="container" />
+          <Route path="/not-found" component={NotFound} />
+          {/* <Redirect to="/not-found" /> */}
+
         <Footer />
       </React.Fragment>
     );

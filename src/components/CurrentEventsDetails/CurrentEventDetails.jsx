@@ -34,7 +34,10 @@ class CurentEventDetails extends Component {
         clearInterval(eveInt);
       }
     }
-    eventChangeTimer(true)
+    
+    document.addEventListener("load", function(){
+      eventChangeTimer(true)
+    })
 
     document.addEventListener("visibilitychange", function() {
       console.log(document.hidden, document.visibilityState);
