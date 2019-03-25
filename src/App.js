@@ -29,7 +29,7 @@ class App extends Component {
     return (
       <React.Fragment>
         <NavBar />
-        {/* <Switch>
+        <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/signin" component={SignIn} />
           <Route
@@ -37,21 +37,9 @@ class App extends Component {
             component={() => <Register register={this.register} />}
           />
           <Route path="/eventDetail/:id" component={DetailPage} />
-          <main className="container" />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
-        </Switch> */}
-        <Route path="/" exact component={Home} />
-          <Route path="/signin" component={SignIn} />
-          <Route
-            path="/register"
-            component={() => <Register register={this.register} />}
-          />
-          <Route path="/eventDetail/:id" component={DetailPage} />
-          <main className="container" />
-          <Route path="/not-found" component={NotFound} />
-          {/* <Redirect to="/not-found" /> */}
-
+        </Switch>
         <Footer />
       </React.Fragment>
     );
