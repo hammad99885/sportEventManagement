@@ -5,17 +5,22 @@ class Register extends Component {
     state={
         fName:"",
         lName:"",
-        fullName: "",
+        fullName:  "",
         email:"",
         password:""
     }
     onFNameChange = (e)=>{
         this.setState({fName: e.target.value});
-        this.setFullName();
+        setTimeout(()=>{
+            this.setFullName();
+        },1000)
+        
     }
     onLNameChange = (e)=>{
         this.setState({lName: e.target.value});
-        this.setFullName();
+        setTimeout(()=>{
+            this.setFullName();
+        },1000)
     }
     onEmailChange = (e)=>{
         this.setState({email: e.target.value});
