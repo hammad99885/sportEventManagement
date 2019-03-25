@@ -4,41 +4,6 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    // <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    //   <Link className="navbar-brand" to="/">
-    //     Vidly
-    //   </Link>
-    //   <button
-    //     className="navbar-toggler"
-    //     type="button"
-    //     data-toggle="collapse"
-    //     data-target="#navbarNavAltMarkup"
-    //     aria-controls="navbarNavAltMarkup"
-    //     aria-expanded="false"
-    //     aria-label="Toggle navigation"
-    //   >
-    //     <span className="navbar-toggler-icon" />
-    //   </button>
-    //   <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-    //     <div className="navbar-nav">
-    //       <NavLink className="nav-item nav-link" to="/movies">
-    //         Movies
-    //       </NavLink>
-    //       <NavLink className="nav-item nav-link" to="/customers">
-    //         Customers
-    //       </NavLink>
-    //       <NavLink className="nav-item nav-link" to="/rentals">
-    //         Rentals
-    //       </NavLink>
-    //       <NavLink className="nav-item nav-link" to="/login">
-    //         Login
-    //       </NavLink>
-    //       <NavLink className="nav-item nav-link" to="/register">
-    //         Register
-    //       </NavLink>
-    //     </div>
-    //   </div>
-    // </nav>
 
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <Link className="navbar-brand mr-5" to="/">Navbar</Link>
@@ -91,10 +56,10 @@ const NavBar = () => {
 
       <ul className="navbar-nav mr-5">
         <li className="nav-item mr-4">
-        <Link className="nav-link" to="/signin">Sign In</Link>
+        <Link className="nav-link" to="/forms/login">Sign In</Link>
           </li>
           <li className="">
-            <Link to="/register" className=" btn btn-outline-light">Sign Up</Link>
+            <Link to="/forms/register" className=" btn btn-outline-light">Sign Up</Link>
           </li>
       </ul>
      
