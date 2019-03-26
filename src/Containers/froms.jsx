@@ -13,32 +13,30 @@ class Forms extends Component {
   };
 
   register = (e, fName, lName, fullName, email, password) => {
-    e.preventDefault();
-    if (email.match(this.state.mailFormat)) {
-      // code to execute goes here
-      console.log(fName, lName, fullName, email, password, e);
-    }
+    // e.preventDefault();
+    // if (email.match(this.state.mailFormat)) {
+    //   // code to execute goes here
+    //   console.log(fName, lName, fullName, email, password, e);
+    // }
+
+    console.log("test")
+
     // e.value
   };
-
 
   logIn = (e, email, password) => {
     e.preventDefault();
     this.setState({ formatedEmail: true, formatedPassword: true });
     if (email.match(this.state.mailFormat) && password !== "") {
       console.log(email, password);
-      console.log("test")
       this.setState({ formatedEmail: true, formatedPassword: true });
     } else {
       if (!email.match(this.state.mailFormat) || email === "") {
         this.setState({ formatedEmail: false });
       }
-
       if (password === "") {
         this.setState({ formatedPassword: false });
       }
-
-      console.log("testf")
     }
   };
   render() {
@@ -53,21 +51,11 @@ class Forms extends Component {
         />
       );
     } else if (FromName === "register") {
-      return <Register register={this.register} />;
+      return (
+        <Register mailFormat={this.state.mailFormat} register={this.register} />
+      );
     }
   }
 }
 
 export default Forms;
-
-//     <Switch>
-//     <div>abc</div>
-//         <Route
-//     path="/forms/signin"
-//     component={() => <SignIn formatedEmail={this.state.formatedEmail} logIn={this.logIn} />}
-//   />
-//   <Route
-//     path="froms/register"
-//     component={() => <Register register={this.register} />}
-//   />
-//     </Switch>
