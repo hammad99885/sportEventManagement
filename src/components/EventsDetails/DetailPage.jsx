@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { EventDetils } from "../../Services/Events";
+import Tabelgenrator from '../commom/TabelGenrator';
 
 const DetailPage = props => {
   const id = props.match.params.id;
@@ -43,7 +44,7 @@ const DetailPage = props => {
           <div className="row text-light pt-3">
             <div className="col-md-6">
             <h4>{item.teams.teamOne}</h4>
-              <table className="table text-light">
+              {/* <table className="table text-light">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
@@ -66,7 +67,8 @@ const DetailPage = props => {
                   )}
                  
                 </tbody>
-              </table>
+              </table> */}
+              <Tabelgenrator tabelHead={["3", "Player Name", "Main Role"]} tabelRow={item.eventDetails.teamsDetails.team1.teamMembers} />
             </div>
             <div className="col-md-6">
                 <h4>{item.teams.teamTwo}</h4>

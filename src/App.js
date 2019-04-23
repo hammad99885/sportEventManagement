@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Switch, Redirect, withRouter } from "react-router-dom";
+
 import NavBar from "./components/Nav/navBar";
 import "./App.css";
 import Home from "./Containers/home";
@@ -10,27 +11,37 @@ import DetailPage from "./components/EventsDetails/DetailPage";
 import NotFound from "./components/NotFound/NotFound";
 import Forms from './Containers/froms';
 
+import { connect } from 'react-redux';
+import Profile from './Containers/Profile';
+import { userStat } from './actions/index';
+
 class App extends Component {
-  state = {
-    isLogedIn: false,
-  };
-
+  // state = {
+  //   isLogedIn: false,
+  // };
+  constructor(props){
+    super(props)
+    props.userStat();
+  }
+  componentDidMount(){
+    // userStat();
+    // console.log("com")
+  }
+  
   render() {
-
+    // this.props.authStatus?this.props.histroy.replace("/"):;
+    // console.log(this.props.history.replace)
+    // if(this.props.authStatus){
+    //   this.props.history.replace("/")
+    // }
     return (
       <React.Fragment>
-        <NavBar />
+        {/* <button onClick={this.props.userStat}>test</button> */}
+        <NavBar {...this.props}/>
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/forms/:formName" component={Forms} />
-          {/* <Route
-            path="/signin"
-            component={() => <SignIn formatedEmail={this.state.formatedEmail} logIn={this.logIn} />}
-          />
-          <Route
-            path="/register"
-            component={() => <Register register={this.register} />}
-          /> */}
+          <Route path="/profile" component={Profile}/>
           <Route path="/eventDetail/:id" component={DetailPage} />
           <Route path="/not-found" component={NotFound} />
           <Redirect to="/not-found" />
@@ -41,4 +52,11 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps=state=>{
+  return {
+    authStatus :state.AuthReducer.authStatus,
+  }
+}
+
+// export w
+export default withRouter(connect(mapStateToProps,{userStat})(App));

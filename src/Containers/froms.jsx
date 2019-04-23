@@ -1,61 +1,67 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { connect } from "react-redux";
+import { onInputChange, onLogin, onRegister } from "../actions";
 
 import SignIn from "../components/SignIn/SignIn";
 import Register from "../components/Register/rigester";
 
 class Forms extends Component {
-  state = {
-    mailFormat: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-    incorrectCredits: false,
-    formatedEmail: true,
-    formatedPassword: true
+  register = event => {
+    this.props.onRegister(
+      event,
+      this.props.fName,
+      this.props.lName,
+      this.props.email,
+      this.props.password,
+      this.props.mailFormat,
+      this.props.history
+    );
+    console.log(this.props.onRegister);
   };
 
-  register = (e, fName, lName, fullName, email, password) => {
-    // e.preventDefault();
-    // if (email.match(this.state.mailFormat)) {
-    //   // code to execute goes here
-    //   console.log(fName, lName, fullName, email, password, e);
-    // }
-
-    console.log("test")
-
-    // e.value
+  logIn = event => {
+    this.props.onLogin(
+      event,
+      this.props.email,
+      this.props.password,
+      this.props.mailFormat,
+      this.props.history
+    );
   };
 
-  logIn = (e, email, password) => {
-    e.preventDefault();
-    this.setState({ formatedEmail: true, formatedPassword: true });
-    if (email.match(this.state.mailFormat) && password !== "") {
-      console.log(email, password);
-      this.setState({ formatedEmail: true, formatedPassword: true });
-    } else {
-      if (!email.match(this.state.mailFormat) || email === "") {
-        this.setState({ formatedEmail: false });
-      }
-      if (password === "") {
-        this.setState({ formatedPassword: false });
-      }
-    }
-  };
   render() {
-    // console.log(this.props.match.params.formName)
     const FromName = this.props.match.params.formName;
     if (FromName === "login") {
       return (
-        <SignIn
-          formatedEmail={this.state.formatedEmail}
-          formatedPassword={this.state.formatedPassword}
-          logIn={this.logIn}
-        />
+        <SignIn logIn={this.logIn} changeHandler={this.props.onInputChange} />
       );
     } else if (FromName === "register") {
       return (
-        <Register mailFormat={this.state.mailFormat} register={this.register} />
+        <Register
+          changeHandler={this.props.onInputChange}
+          register={this.register}
+        />
       );
     }
   }
 }
 
-export default Forms;
+const mapStateToProps = state => {
+  return {
+    authStatus: state.AuthReducer.authStatus,
+    email: state.AuthReducer.email,
+    password: state.AuthReducer.password,
+    mailFormat: state.AuthReducer.mailFormat,
+    fName: state.AuthReducer.Fname,
+    lName: state.AuthReducer.Lname
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  {
+    onInputChange,
+    onLogin,
+    onRegister
+  }
+)(Forms);

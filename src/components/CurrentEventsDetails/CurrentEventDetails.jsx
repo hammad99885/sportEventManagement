@@ -19,8 +19,8 @@ class CurentEventDetails extends Component {
           setTimeout(()=>{
               const events = CurrentEvents[this.counter];
             this.setState({events});
-            console.log(this.state.events)
-            console.log(this.counter)
+            // console.log(this.state.events)
+            // console.log(this.counter)
             this.counter = this.counter + 1;
             if(this.counter == CurrentEvents.length ){
               this.counter = 0;

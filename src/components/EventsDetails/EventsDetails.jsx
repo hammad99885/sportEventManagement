@@ -1,9 +1,40 @@
 import React, { Component } from "react";
 import { EventDetils } from "../../Services/Events";
 import { Link } from "react-router-dom";
+// import Axios from "axios";
+// import axios from "axios";
 // import { Link } from 'react-router-dom';
 
 const EventsDetails = () => {
+  // var eventDetails;
+  // fetch('http://localhost:3000')
+  //     .then(res=> res.json())
+  //     .then(data=>{eventDetails=data; console.log(eventDetails)});
+  //   console.log(eventDetails)
+  // const dumy = { TeamId: 1, IsActive: 1 };
+  // fetch("http://192.168.10.8/api/values")
+  //   .then(res => res.json())
+  //   .then(data => console.log(data));
+
+  // fetch("http://192.168.10.8/api/values", {
+  //   method: "post",
+  //   body: JSON.stringify(JSON.stringify(dumy)),
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //     // "Content-Type": "application/x-www-form-urlencoded",
+  // },
+  // })
+  //   .then(res => res.json())
+  //   .then(data => console.log(data));
+
+  // axios.post("http://192.168.10.8/api/values", dumy)
+  // .then(function (response) {
+  //   console.log(response);
+  // })
+  // .catch(function (error) {
+  //   console.log(error);
+  // });
+
   return (
     <div className="EVD pt-4 pb-4 ">
       <h2 className="display-4 width-100 text-light text-center mb-5">
