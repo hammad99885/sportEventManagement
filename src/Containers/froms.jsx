@@ -1,32 +1,66 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { onInputChange, onLogin, onRegister } from "../actions";
+// import Joi from "Joi";
+import { onInputChange, onLogin, onRegister, invalidCredits } from "../actions";
 
 import SignIn from "../components/SignIn/SignIn";
 import Register from "../components/Register/rigester";
+import Joi from "joi";
 
 class Forms extends Component {
+  state = {
+    loginSchema: Joi.object().keys({
+      email: Joi.string()
+        .email()
+        .required(),
+      password: Joi.string().required()
+    }),
+    registerSchema: Joi.object().keys({
+      firstName: Joi.string()
+        .required()
+        .min(5),
+      lastName: Joi.string().required(),
+      email: Joi.string()
+        .email()
+        .required(),
+      password: Joi.string()
+        .regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/)
+        .required()
+    })
+  };
   register = event => {
-    this.props.onRegister(
-      event,
-      this.props.fName,
-      this.props.lName,
-      this.props.email,
-      this.props.password,
-      this.props.mailFormat,
-      this.props.history
-    );
-    console.log(this.props.onRegister);
+    event.preventDefault();
+    Joi.validate(
+      {
+        firstName: this.props.fName,
+        lastName: this.props.lName,
+        email: this.props.email,
+        password: this.props.password
+      },
+      this.state.registerSchema
+    )
+      .then(succ => {
+        this.props.onRegister(succ, this.props.history);
+      })
+      .catch(e => {
+        console.log(e.details[0].message);
+        this.props.invalidCredits(e.details[0].message);
+      });
   };
 
   logIn = event => {
-    this.props.onLogin(
-      event,
-      this.props.email,
-      this.props.password,
-      this.props.mailFormat,
-      this.props.history
-    );
+    event.preventDefault();
+    Joi.validate(
+      { email: this.props.email, password: this.props.password },
+      this.state.loginSchema
+    )
+      .then(succ => {
+        this.props.onLogin(succ, this.props.history);
+      })
+      .catch(e => {
+        console.log(e.details[0].message);
+        this.props.invalidCredits(e.details[0].message);
+      });
   };
 
   render() {
@@ -62,6 +96,7 @@ export default connect(
   {
     onInputChange,
     onLogin,
-    onRegister
+    onRegister,
+    invalidCredits
   }
 )(Forms);

@@ -3,9 +3,9 @@ import React from 'react';
 const InputField = ({name, type, label, changeHandler}) => {
     return ( 
         <div className="form-group">
-                <label className="db fw6 lh-copy f6" htmlFor={name}>
+                {/* <label className="db fw6 lh-copy f6" htmlFor={name}>
                   {label}
-                </label>
+                </label> */}
                 <input
                   onChange={changeHandler}
                   type={type}
@@ -13,7 +13,7 @@ const InputField = ({name, type, label, changeHandler}) => {
                   name={name}
                   id={name}
                 />
-                <label htmlFor={name} className="animated-label" />
+                <label htmlFor={name} className="animated-label" >{label}</label>
                 
               </div>
      );

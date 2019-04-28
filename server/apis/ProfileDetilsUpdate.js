@@ -25,3 +25,7 @@ module.exports = (app, User) => {
  * socialAccounts (note for social account the data must be object structured as following )
  * {facebook, twitter, linkedIn}
  */
+
+ /****
+  * 
+  */

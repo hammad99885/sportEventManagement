@@ -30,83 +30,13 @@ module.exports = (mongoose, Schema, relationship) => {
         linkedIn: {default:"http://wwww.linkedIn.com", type:String}
       },
       website:{type:String, default:"#"},
-      
-    }
+    },
+    // RegisteredTeams:[{type:Schema.ObjectId, ref:"teamMembers"}]
   });
 
-//   let userData = [
-//     {
-//       firstName: "User",
-//       lastName: "One",
-//       email: "userone@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Two",
-//       email: "userTwo@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "three",
-//       email: "userthree@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Four",
-//       email: "userfour@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Five",
-//       email: "userfive@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Six",
-//       email: "usersix@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Seven",
-//       email: "userseven@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     },
-//     {
-//       firstName: "User",
-//       lastName: "Eight",
-//       email: "usereight@mail.com",
-//       gender: "male",
-//       password:"defaultPassword",
-//       department: "5cba3e8194f1ac4730a16e60"
-//     }
-//   ];
 
   userSchema.plugin(relationship, { relationshipPathName: "department" });
   var Users = mongoose.model("Users", userSchema);
-//   userData.map(us => {
-//     let newUser = new Users(us);
-//     newUser.save();
-//   });
   
   return Users;
 };

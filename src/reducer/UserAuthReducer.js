@@ -14,7 +14,7 @@ let formState = {
   Lname: "",
   fullName: "",
   email: "",
-  password: ""
+  password: "",
 };
 
 // formState = {formState, ...loadState}
@@ -62,8 +62,6 @@ export const AuthReducer = (state = formState, action) => {
           };
 
     case types.USER_PRESENT:
-      console.log("test");
-      console.log(action.payload);
       return {
         ...state,
         userData: action.payload.localData.userData,
@@ -76,8 +74,12 @@ export const AuthReducer = (state = formState, action) => {
         ...state,
         userLoggedIn: false,
         userData: {},
-        authStatus:false
-      }
+        authStatus: false,
+        authMessage: ""
+      };
+
+    case types.INVALID_CREDITS:
+    return {...state, authMessage:action.payload}
 
     default:
       return state;
